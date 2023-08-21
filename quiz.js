@@ -13,7 +13,7 @@ const questions = [
   {
     question: "which is the smallest planet?",
     options: ["Earth", "Mercury", "Mars", "Pluto"],
-    answer: "pluto",
+    answer: "Pluto",
   },
 ];
 
@@ -43,21 +43,37 @@ function loadQuestion() {
   ThirdOption.innerText = currentQuestionSet.options[2];
   fourthOption.innerText = currentQuestionSet.options[3];
 }
-console.log(firstOption.innerText);
+
+// console.log(firstOption.innerText);
 
 function checkAnswer(option) {
   if (currentQuestionSet.answer === option.target.innerText) {
-    console.log("correct");
+    // console.log("correct");
 
     option.target.style.backgroundColor = "green";
     points = points + 1;
   } else {
-    console.log("wrong");
+    // console.log("wrong");
 
     option.target.style.backgroundColor = "red";
   }
-  console.log(option.target.innerText);
+  // console.log(option.target.innerText);
   currentQuestionIndex = currentQuestionIndex + 1;
+
+  setTimeout(() => {
+    if (questions.length === currentQuestionIndex) {
+      // alert(`GAME OVER your point ${points}`);
+      let score = document.getElementById("score");
+      score.innerText = `${points} out of ${questions.length}`;
+      let quizBox = document.getElementById("quizBox");
+      quizBox.style.display = "none";
+      let resultBox = document.getElementById("resultBox");
+      resultBox.style.display = "block";
+    } else {
+      option.target.style.backgroundColor = "white";
+      loadQuestion();
+    }
+  }, 500);
 }
 
 loadQuestion();
