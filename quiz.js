@@ -17,7 +17,7 @@ const questions = [
   },
 ];
 
-let point = 0;
+let points = 0;
 const qustionElemnt = document.getElementById("question");
 
 const firstOption = document.getElementById("option1");
@@ -44,3 +44,20 @@ function loadQuestion() {
   fourthOption.innerText = currentQuestionSet.options[3];
 }
 console.log(firstOption.innerText);
+
+function checkAnswer(option) {
+  if (currentQuestionSet.answer === option.target.innerText) {
+    console.log("correct");
+
+    option.target.style.backgroundColor = "green";
+    points = points + 1;
+  } else {
+    console.log("wrong");
+
+    option.target.style.backgroundColor = "red";
+  }
+  console.log(option.target.innerText);
+  currentQuestionIndex = currentQuestionIndex + 1;
+}
+
+loadQuestion();
