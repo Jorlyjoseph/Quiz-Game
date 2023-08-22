@@ -2,7 +2,6 @@ QUIZ GAME
 Click here to see deployed game
 
 Description
-Brief description of the project
 This is a quiz Game. There are five multiple choice questions. Each one of question have four options. if you will click the right answer, you will get 1 score. At the end you can see how much score you get it.
 
 MVP

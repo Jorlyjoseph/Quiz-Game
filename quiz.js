@@ -1,19 +1,19 @@
 const questions = [
   {
-    question: "which planet is closest to the sun?",
-    options: ["Earth", "Mercury", "Mars", "Pluto"],
-    answer: "Mercury",
+    question: "What is the name of the fastest land animal?",
+    options: ["Cheetah", "Springbok", "Blue Wildebeest", "Tiger"],
+    answer: "Cheetah",
   },
 
   {
-    question: "which planet is closest to the moon?",
-    options: ["Earth", "Mercury", "Mars", "Pluto"],
-    answer: "Earth",
+    question: " How many humps does a Bactrian camel have?",
+    options: ["four", "three", "two", "one"],
+    answer: "two",
   },
   {
-    question: "which is the smallest planet?",
-    options: ["Earth", "Mercury", "Mars", "Pluto"],
-    answer: "Pluto",
+    question: "What is the only mammal that cant jump?",
+    options: ["Hippo", "White rhinoceros", "Polar bear", "Elephant"],
+    answer: "Elephant",
   },
 ];
 
