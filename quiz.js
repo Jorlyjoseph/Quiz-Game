@@ -10,11 +10,21 @@ const questions = [
     options: ["four", "three", "two", "one"],
     answer: "two",
   },
-  {
-    question: "What is the only mammal that cant jump?",
-    options: ["Hippo", "White rhinoceros", "Polar bear", "Elephant"],
-    answer: "Elephant",
-  },
+  // {
+  //   question: "What is the only mammal that can't jump?",
+  //   options: ["Hippo", "White rhinoceros", "Polar bear", "Elephant"],
+  //   answer: "Elephant",
+  // },
+  // {
+  //   question: " What is a rhinos horn made of?",
+  //   options: ["Bones", "Collagen", "Fibroin", "Keratin"],
+  //   answer: "Keratin",
+  // },
+  // {
+  //   question: "which is the longest snake in the world?",
+  //   options: ["Black Mamba", "Reticulated python", "puff Adder", "Anaconda"],
+  //   answer: "Reticulated python",
+  // },
 ];
 
 let points = 0;
@@ -50,12 +60,12 @@ function checkAnswer(option) {
   if (currentQuestionSet.answer === option.target.innerText) {
     // console.log("correct");
 
-    option.target.style.backgroundColor = "green";
+    option.target.style.backgroundColor = "#228B22";
     points = points + 1;
   } else {
     // console.log("wrong");
 
-    option.target.style.backgroundColor = "red";
+    option.target.style.backgroundColor = "#F08080";
   }
   // console.log(option.target.innerText);
   currentQuestionIndex = currentQuestionIndex + 1;
@@ -65,10 +75,15 @@ function checkAnswer(option) {
       // alert(`GAME OVER your point ${points}`);
       let score = document.getElementById("score");
       score.innerText = `${points} out of ${questions.length}`;
+
       let quizBox = document.getElementById("quizBox");
       quizBox.style.display = "none";
       let resultBox = document.getElementById("resultBox");
       resultBox.style.display = "block";
+
+      document.getElementById("again").addEventListener("click", function () {
+        location.reload();
+      });
     } else {
       option.target.style.backgroundColor = "white";
       loadQuestion();
