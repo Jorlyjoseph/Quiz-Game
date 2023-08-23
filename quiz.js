@@ -10,21 +10,21 @@ const questions = [
     options: ["four", "three", "two", "one"],
     answer: "two",
   },
-  // {
-  //   question: "What is the only mammal that can't jump?",
-  //   options: ["Hippo", "White rhinoceros", "Polar bear", "Elephant"],
-  //   answer: "Elephant",
-  // },
-  // {
-  //   question: " What is a rhinos horn made of?",
-  //   options: ["Bones", "Collagen", "Fibroin", "Keratin"],
-  //   answer: "Keratin",
-  // },
-  // {
-  //   question: "which is the longest snake in the world?",
-  //   options: ["Black Mamba", "Reticulated python", "puff Adder", "Anaconda"],
-  //   answer: "Reticulated python",
-  // },
+  {
+    question: "What is the only mammal that can't jump?",
+    options: ["Hippo", "White rhinoceros", "Polar bear", "Elephant"],
+    answer: "Elephant",
+  },
+  {
+    question: " What is a rhinos horn made of?",
+    options: ["Bones", "Collagen", "Fibroin", "Keratin"],
+    answer: "Keratin",
+  },
+  {
+    question: "which is the longest snake in the world?",
+    options: ["Black Mamba", "Reticulated python", "puff Adder", "Anaconda"],
+    answer: "Reticulated python",
+  },
 ];
 
 let points = 0;

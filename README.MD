@@ -9,9 +9,9 @@ MVP
    2. choose one option from that.
    3. if it is right answer button shows green.
    4. otherwise it shows red.
-   5. after thirty second, the next qustion will come automatically.
+   5. after 500 millisecond, the next qustion will come automatically.
    6. After all questions it shows the score .
-   7. Then refresh it and game will start again.
+   7. Then click the start again button, game will start again.
 
 Backlog
 List of features you might implement after the MVP
