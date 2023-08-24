@@ -25,6 +25,11 @@ const questions = [
     options: ["Black Mamba", "Reticulated python", "puff Adder", "Anaconda"],
     answer: "Reticulated python",
   },
+  {
+    question: "How many eyes does a honeybee have ?",
+    options: ["two", "three", "four", "five"],
+    answer: "five",
+  },
 ];
 
 let points = 0;

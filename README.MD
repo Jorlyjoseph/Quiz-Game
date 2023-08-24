@@ -30,6 +30,7 @@ DOM Manipulation
 States y States Transitions
 1. Game Screen
 2. Game Over Screen
+3. ![My Image](images./../IMG_0297.png)
 
 Task
 List of tasks in order of priority
@@ -43,3 +44,6 @@ startGame();
 gameOver();
 
 Links
+Slides : https://docs.google.com/presentation/d/1ZDc7Utksg3hHqQiTD7vlPXN5EfcMSo-tXeSTYFR1n_s/edit?usp=sharing
+
+Deploy : 

@@ -63,13 +63,13 @@ hr {
 .result {
   display: none;
   color: rgb(58, 31, 31);
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 900;
   text-align: center;
 }
 
 #again {
-  font-size: 40px;
+  font-size: 45px;
   border-radius: 5px;
   background-color: #4caf50;
   color: white;
